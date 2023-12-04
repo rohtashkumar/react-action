@@ -7,4 +7,4 @@ jobs:
     - name: actions/checkout
       uses: actions/checkout@v4
     - name: Github Context output
-      run: echo "{{ toJSON(github) }}"
+      run: echo "${{ toJSON(github) }}"
