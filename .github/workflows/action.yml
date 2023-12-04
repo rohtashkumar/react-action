@@ -14,5 +14,9 @@ jobs:
       run: npm ci
     - name: Run Test
       run: npm test
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - run: "env"
 
 
