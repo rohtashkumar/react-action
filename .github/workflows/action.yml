@@ -6,4 +6,13 @@ jobs:
     steps:
     - name: Get Code Download
       uses: actions/checkout@v4
+    - name: Install Node Js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    - name: Install Dependecny
+      run: npm ci
+    - name: Run Test
+      run: npm test
+
 
